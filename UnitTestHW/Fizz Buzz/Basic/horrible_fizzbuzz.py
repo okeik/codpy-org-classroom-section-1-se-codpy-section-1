@@ -7,4 +7,4 @@ def fizzBuzz(n: int) -> str:
         return "Fizz" + "Buzz"
     elif n%1==0:
         return f"{str(n)}"
-    return "OwO"
+    return "OwO" 
