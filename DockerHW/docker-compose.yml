@@ -1,4 +1,11 @@
-version: '3'
+version: '3.8'
 
 services:
   web:
+    # 告訴 Docker Compose 在當前目錄 (.) 尋找 Dockerfile 來建立映像檔
+    build: .
+    # 將本機的 8080 port 映射到容器內的 80 port
+    ports:
+     - "8080:80"
+    # 設定容器名稱 (可選)
+    container_name: my_web_hw
